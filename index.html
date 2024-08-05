@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clignotement</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #indicator {
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Test de Clignotement</h1>
+        <div class="form-group">
+            <label for="frequency">Fréquence (Hz):</label>
+            <input type="number" class="form-control" id="frequency" placeholder="Entrez la fréquence">
+        </div>
+        <div class="form-group">
+            <label for="dutyCycle">Rapport Cyclique (%):</label>
+            <input type="number" class="form-control" id="dutyCycle" placeholder="Entrez le rapport cyclique">
+        </div>
+        <button id="startButton" class="btn btn-primary btn-block">Démarrer</button>
+        <div id="indicator"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
