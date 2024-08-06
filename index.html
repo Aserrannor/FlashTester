@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clignotement</title>
+    <title>BlinkMaster</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         #indicator {
@@ -17,13 +17,22 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Test de Clignotement</h1>
+        <h1 class="text-center">BlinkMaster</h1>
+
+        <!-- Section d'explication -->
+        <div class="alert alert-info">
+            <h2>Qu'est-ce que la fréquence et le rapport cyclique ?</h2>
+            <p><strong>Fréquence (Hz) :</strong> La fréquence représente le nombre de fois qu'un événement se répète par seconde. Dans le contexte du clignotement, c'est le nombre de fois que l'indicateur clignote par seconde.</p>
+            <p><strong>Rapport cyclique (%):</strong> Le rapport cyclique est le pourcentage de temps pendant lequel l'indicateur est allumé dans un cycle complet. Par exemple, un rapport cyclique de 50% signifie que l'indicateur est allumé la moitié du temps et éteint l'autre moitié.</p>
+            <p><strong>Exemple :</strong> Si vous définissez la fréquence à 2 Hz et le rapport cyclique à 50%, l'indicateur clignotera deux fois par seconde, et il sera allumé pendant 0,25 seconde (25% de 0,5 seconde) et éteint pendant 0,25 seconde (25% de 0,5 seconde).</p>
+        </div>
+
         <div class="form-group">
-            <label for="frequency">Fréquence (Hz):</label>
+            <label for="frequency">Fréquence (Hz) :</label>
             <input type="number" class="form-control" id="frequency" placeholder="Entrez la fréquence">
         </div>
         <div class="form-group">
-            <label for="dutyCycle">Rapport Cyclique (%):</label>
+            <label for="dutyCycle">Rapport Cyclique (%) :</label>
             <input type="number" class="form-control" id="dutyCycle" placeholder="Entrez le rapport cyclique">
         </div>
         <button id="startButton" class="btn btn-primary btn-block">Démarrer</button>
